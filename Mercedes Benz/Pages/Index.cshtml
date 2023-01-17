@@ -4,7 +4,140 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta name="description" content="Mercedes.bg - Mercedes Bulgaria" />
+	<meta name="keywords" content="Mercedes-Benz, AMG, luxury cars" />
+	<title>Mercedes-Benz</title>
+	<!-- da opravq meta tagovete -->
+</head>
+
+<body>
+
+	<!-- SOCIAL LINKS -->
+	<div id="links">
+
+		<a href="#"><img class="link" src="~/images/fb.png"></img></a>
+		<a href="#"><img class="linktwo" src="~/images/inst.png"></img></a>
+
+	</div>
+
+	<div id="header">
+
+		<img src="~/images/car.jpg">
+
+	</div>
+	<!-- /SOCIAL LINKS -->
+
+
+	<div id="dpFlex">
+
+		<!-- SEARCH BUTTON -->
+		<div class="dropdown">
+
+			<input onclick="myFunction()" class="search" placeholder="Search..."></input>
+
+			<div id="searchDrop" class="content">
+
+				<ul>
+
+					<li><a href="#about">Provider</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li><a href="#">Careers</a></li>
+
+				</ul>
+
+			</div>
+
+		</div>
+		<!-- /SEARCH BUTTON -->
+		<!-- MAIN BUTTONS -->
+		<div id="navigation">
+
+			<nav>
+
+				<ul>
+
+					<li><a href="mainpg.html">HOME</a></li>
+					<li><a href="./pages/models.html">Models</a></li>
+					<li><a href="#">Get your AMG</a></li>
+
+				</ul>
+
+			</nav>
+
+		</div>
+		<!-- /MAIN BUTTONS -->
+		<!-- REGISTER BUTTON -->
+		<div id="right">
+
+			<ul>
+
+				<li><a href="./pages/login.html" target="_blank">Log in</a></li>
+
+			</ul>
+
+		</div>
+		<!-- /REGISTER BUTTON -->
+
+	</div>
+
+	<!-- MAIN -->
+	<div id="main">
+
+		<div class="pOne">
+
+			<a href="#"><img src="~/images/cla1.jpg"></a>
+
+			<div class="left"><a href="#"><h1><i>The new CLA</i></h1></a> <p>Fuel transmission economy</p></div>
+
+		</div>
+
+		<div class="pTwo">
+
+			<a href="#"><img src="~/images/cla2.jpg"></a>
+
+			<a href="#"><img src="~/images/cla3.jpg"></a>
+
+		</div>
+
+	</div>
+	<!-- /MAIN -->
+	<!-- NEWSLETTER -->
+	<div id="newsletter">
+
+		<i><p class="sbs">Subscribe to our Newsletter</p></i>
+
+		<form action="#">
+			<!-- да сменя линка и да направя страница за успешно регистриране -->
+
+			<input class="sub" type="text" name="subscribe" placeholder="E-mail">
+
+			<hr>
+
+			<button onclick="succesfulReg()" class="btns">Subscribe</button>
+
+		</form>
+
+	</div>
+	<!-- /NEWSLETTER -->
+	<!-- FOOTER LINKS -->
+	<div id="footer">
+
+		<li><a href="./pages/dealers.html">Dealers</a></li>
+		<li><a href="#">Test Drive</a></li>
+		<li><a href="#">Model Overview</a></li>
+
+	</div>
+	<!-- /FOOTER LINKS -->
+
+	<link rel="stylesheet" type="text/css" href="~/css/mainpg.css">
+	<script type="text/javascript" src="./js/mainpg.js"></script>
+
+</body>
+</html>

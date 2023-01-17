@@ -7,4 +7,8 @@
     <RootNamespace>Mercedes_Benz</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
+
 </Project>

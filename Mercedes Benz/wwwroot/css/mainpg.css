@@ -1,0 +1,347 @@
+﻿* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-size: 16px;
+    background-color: #000;
+}
+
+/* SOCIAL LINKS*/
+
+.link {
+    color: white;
+    position: fixed;
+    display: block;
+    padding: 0.8em;
+    background-color: #e23131;
+    right: 0;
+    top: 30%;
+}
+
+div#links > a img:hover {
+    -webkit-box-shadow: 0px 0px 40px 0px rgba(226,49,49,1);
+    -moz-box-shadow: 0px 0px 40px 0px rgba(226,49,49,1);
+    box-shadow: 0px 0px 40px 0px rgba(226,49,49,1);
+}
+
+.linktwo {
+    color: white;
+    position: fixed;
+    display: block;
+    padding: 0.8em;
+    background-color: #e23131;
+    right: 0;
+    top: 36%;
+}
+
+/*HEADER*/
+
+#header img {
+    width: 100%;
+    display: flex;
+    display: -ms-flexbox; /* IE 10 */
+}
+
+#header, #dpFlex, #main, #newsletter {
+    margin: 0 10%;
+}
+
+/*NAVBAR & SEARCH*/
+
+#dpFlex {
+    display: -ms-flexbox; /* IE 10 */
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/*SEARCH BUTTON*/
+
+.search { /*input field*/
+
+    background-color: #000;
+    color: white;
+    padding: 1em;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.dropdown { /*div class*/
+
+    position: relative;
+    display: inline-block;
+}
+
+.content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    overflow: auto;
+    padding: 0em;
+    z-index: 1;
+    margin: 0;
+}
+
+    .content ul {
+        padding: 0;
+    }
+
+    .content li {
+        list-style-type: none;
+    }
+
+    .content a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding: 1em;
+    }
+
+.dropdown a:hover {
+    background-color: #e23131;
+    padding: 1em;
+    transition: 1s;
+}
+
+.show {
+    display: block;
+}
+
+/*NAVIGATION BAR*/
+
+#navigation {
+    flex: 85%;
+}
+
+    #navigation ul {
+        display: -ms-flexbox; /* IE 10 */
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        overflow: hidden;
+        background-color: #000;
+        padding: 0;
+    }
+
+    #navigation li {
+        transform: skew(-20deg);
+        -ms-transform: skew(-20deg); /* IE 9 */
+        -webkit-transform: skew(-20deg); /* Safari 3-8 */
+    }
+
+        #navigation li:hover {
+            background-color: #e23131;
+            transform: skew(-20deg);
+            -ms-transform: skew(-20deg); /* IE 9 */
+            -webkit-transform: skew(-20deg); /* Safari 3-8 */
+            transition: 1s;
+        }
+
+    #navigation a {
+        display: inline-block;
+        text-decoration: none;
+        padding: 1em;
+        color: #fff;
+        transform: skew(20deg);
+        -ms-transform: skew(20deg); /* IE 9 */
+        -webkit-transform: skew(20deg); /* Safari 3-8 */
+    }
+
+/*REGISTER BUTTON*/
+
+#right ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #000;
+    padding: 0;
+}
+
+#right li {
+    float: right;
+}
+
+    #right li:hover {
+        background-color: #e23131;
+        transition: 1s;
+    }
+
+#right a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1em;
+    color: #fff;
+}
+
+#right {
+    flex: 15%;
+}
+
+/*MAIN*/
+
+#main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    #main img {
+        width: 100%;
+        padding: 0.2em;
+    }
+
+    #main a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+.pOne {
+    position: relative;
+    text-align: center;
+    color: white;
+    flex: 67%
+}
+
+.pTwo {
+    flex: 33%;
+}
+
+.left {
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    opacity: 0.8;
+    background-color: #000;
+    padding: 0.5em;
+    border: 0.1em solid orange;
+}
+
+/*NEWSLETTER*/
+
+#newsletter {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 1em;
+    display: block;
+    font-size: 1.5em;
+}
+
+.sbs {
+    padding: 1em;
+}
+
+.sub {
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 1em 10em;
+    text-align: center;
+    outline: none; /*maha mi bordera okolo input poleto*/
+    margin-bottom: 1%;
+}
+
+.btns {
+    padding: 1em;
+    background-color: red;
+    border: none;
+    color: white;
+    margin: 1%;
+    outline: none;
+}
+
+/*FOOTER LINKS*/
+
+#footer {
+    text-align: center;
+}
+
+    #footer li {
+        transform: skew(-20deg);
+        -ms-transform: skew(-20deg); /* IE 9 */
+        -webkit-transform: skew(-20deg); /* Safari 3-8 */
+        padding: 0;
+        display: inline-block;
+    }
+
+    #footer a {
+        display: block;
+        text-decoration: none;
+        padding: 1em;
+        color: #FFF;
+        transform: skew(20deg);
+        -ms-transform: skew(20deg); /* IE 9 */
+        -webkit-transform: skew(20deg); /* Safari 3-8 */
+    }
+
+    #footer li:hover {
+        background-color: #e23131;
+        transform: skew(-20deg);
+        -ms-transform: skew(-20deg); /* IE 9 */
+        -webkit-transform: skew(-20deg); /* Safari 3-8 */
+        transition: 1s;
+    }
+
+/*MEDIA QUERY RESPONSIVE DESIGN*/
+
+@media (min-device-width: 320px) and (max-device-width: 820px) {
+
+    /*ASIDE LINKS*/
+    .link {
+        top: 8.5%;
+    }
+
+    .linktwo {
+        top: 11.6%;
+    }
+    /*NAVBAR*/
+    #navigation {
+        flex: 40%;
+    }
+    /*MAIN - text in picture*/
+    .left h1 {
+        font-size: 2em;
+    }
+
+    .left p {
+        font-size: 1em;
+    }
+    /*MAIN - images*/
+    #main {
+        display: block;
+        flex-wrap: wrap;
+        background-color: red; /*da premahna cveta*/
+    }
+}
+
+
+@media (min-device-width: 768px) and (max-device-width: 1100px) {
+
+    /*ASIDE LINKS*/
+    .link {
+        top: 8.5%;
+    }
+
+    .linktwo {
+        top: 12.8%;
+    }
+    /*NAVBAR*/
+    #navigation {
+        flex: 40%;
+    }
+    /*MAIN - text in picture*/
+    .left h1 {
+        font-size: 2em;
+    }
+
+    .left p {
+        font-size: 1em;
+    }
+    /*MAIN - images*/
+    #main {
+        display: block;
+        flex-wrap: wrap;
+        background-color: red; /*da premahna cveta*/
+    }
+}
